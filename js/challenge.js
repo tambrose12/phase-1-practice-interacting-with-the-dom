@@ -3,6 +3,10 @@
 
 const minus = document.querySelector("#minus");
 
+//I just assigned the plus bottom
+
 const plus = document.querySelector("#plus");
 
-//I just assigned the plus bottom
+//assigned heartBtn variable to grab the heart id button for changes
+
+const heartBtn = document.getElementById("heart");
