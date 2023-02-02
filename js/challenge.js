@@ -10,22 +10,35 @@ const heartBtn = document.getElementById("heart");
 
 //assigning counter variable
 let counter = document.getElementById('counter');
-
+let a = counter.textContent
 
 let numberCounter = 0
 
-const addToCounter = (e) => {    
+const addToCounter = (e) => {
     do {
-    
-    numberCounter ++
 
-    console.log(numberCounter)
+        numberCounter++
 
-    counter.textContent = numberCounter
-    
-    } while (numberCounter < 1)
+        counter.textContent = numberCounter
+
+        console.log(counter)
+
+    } while (numberCounter < 0)
+}
+
+const subtractFromCounter = (e) => {
+    do {
+        numberCounter--
+
+        console.log(numberCounter)
+
+        counter.textContent = numberCounter
+
+    } while (numberCounter > 0)
 }
 
 
 
 plus.addEventListener('click', addToCounter)
+
+minus.addEventListener('click', subtractFromCounter)
