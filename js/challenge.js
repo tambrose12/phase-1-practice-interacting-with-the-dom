@@ -9,13 +9,21 @@ const plus = document.querySelector("#plus");
 const heartBtn = document.getElementById("heart");
 
 //assigning counter variable
-const counter = document.getElementById('counter').textContent;
+let counter = document.getElementById('counter');
 
 
-const addToCounter = (count) => {
-    counter += 1
-    console.log(` ${count} `)
+number = 0
 
+const addToCounter = (count) => {    
+    do {
+    
+    number ++
+
+    console.log(number)
+
+    counter.textContent = number
+    
+    } while (number < 1)
 }
 
 plus.addEventListener('click', addToCounter)
