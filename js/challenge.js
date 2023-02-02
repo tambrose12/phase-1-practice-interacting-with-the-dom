@@ -12,18 +12,20 @@ const heartBtn = document.getElementById("heart");
 let counter = document.getElementById('counter');
 
 
-number = 0
+let numberCounter = 0
 
-const addToCounter = (count) => {    
+const addToCounter = (e) => {    
     do {
     
-    number ++
+    numberCounter ++
 
-    console.log(number)
+    console.log(numberCounter)
 
-    counter.textContent = number
+    counter.textContent = numberCounter
     
-    } while (number < 1)
+    } while (numberCounter < 1)
 }
+
+
 
 plus.addEventListener('click', addToCounter)
